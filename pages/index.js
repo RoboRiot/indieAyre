@@ -1,11 +1,15 @@
 import { server } from '../config'
 import ArticleList from '../components/ArticleList'
+import Homes from './home'
 
 export default function Home({ articles }) {
   return (
-    <div>
-      <ArticleList articles={articles} />
-    </div>
+    // <div>
+    //   <ArticleList articles={articles} />
+    // </div>
+    // <div>
+    <Homes />
+    // </div>
   )
 }
 

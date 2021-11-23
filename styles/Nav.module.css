@@ -15,9 +15,9 @@
   list-style: none;
 }
 
-.nav ul li a {
+/* .nav ul li a {
   margin: 5px 15px;
-}
+} */
 
 .icon {
   background: url('../public/byrd.png');

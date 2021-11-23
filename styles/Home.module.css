@@ -28,7 +28,8 @@
 
 
 .carousel .item{
-  height: 300px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .item img {
