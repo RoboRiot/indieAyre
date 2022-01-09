@@ -26,3 +26,8 @@
   display: block;
   /* Other styles here */
 }
+
+.container {
+  background-color: blue !important;
+  width: 100vw;
+}

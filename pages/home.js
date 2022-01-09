@@ -1,76 +1,202 @@
 import homeStyles from '../styles/Home.module.css'
 import '../styles/Home.module.css'
-// import Carousel from 'react-bootstrap/Carousel'
+import Carousel from 'react-bootstrap/Carousel'
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
+import Row from 'react-bootstrap/Row'
+import { Col, Container } from 'react-bootstrap'
 
 const home = () => {
   return (
-    // <div className={homeStyles.carousel}>
-    //   <Carousel >
-        
-    //     <Carousel.Item >
-    //       <img
-    //         className="d-block w-100"
-    //         // src="holder.js/800x400?text=First slide&bg=373940"
-    //         src="stardew.jpeg"
-    //         alt="First slide"
-    //       />
-    //       <Carousel.Caption>
-    //         {/* <h3>First slide label</h3>
-    //         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
-    //       </Carousel.Caption>
-    //     </Carousel.Item>
-    //     <Carousel.Item>
-    //       <img
-    //         className="d-block w-100"
-    //         src="celeste.jpeg"
-    //         alt="Second slide"
-    //       />
 
-    //       <Carousel.Caption>
-    //         {/* <h3>Second slide label</h3>
-    //         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-    //       </Carousel.Caption>
-    //     </Carousel.Item>
-    //     <Carousel.Item>
-    //       <img
-    //         className="d-block w-100"
-    //         src="hades.0_launch_trailer"
-    //         alt="Third slide"
-    //       />
+    <div>
+      <Carousel>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="./celeste.jpeg"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3></h3>
+            <p></p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="hades.0_launch_trailer"
+            alt="Second slide"
+          />
 
-    //       <Carousel.Caption>
-    //         {/* <h3>Third slide label</h3>
-    //         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
-    //       </Carousel.Caption>
-    //     </Carousel.Item>
-    //   </Carousel>
-      
-    // </div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="stardew.jpeg" class="d-block w-100" alt="..."/>
-        </div>
-        <div class="carousel-item">
-          <img src="celeste.jpeg" class="d-block w-100" alt="..."/>
-        </div>
-        <div class="carousel-item">
-          <img src="hades.0_launch_trailer" class="d-block w-100" alt="..."/>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+          <Carousel.Caption>
+            <h3></h3>
+            <p></p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="stardew.jpeg"
+            alt="Third slide"
+          />
+
+          <Carousel.Caption>
+            <h3></h3>
+            <p></p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+
+      <Container style={{ marginTop: '1vw' }}>
+        <Row>
+          <Col className="justify-content-md-center">
+            <Card className="text-center" style={{ marginBottom: '2vw' }}>
+              <Card.Header>Action</Card.Header>
+              <Card.Body>
+
+                <Card style={{ width: '18rem' }}>
+                  <Card.Img variant="top" src="celeste.jpeg" />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and make up the bulk of
+                      the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+
+                <Card style={{ width: '18rem' }}>
+                  <Card.Img variant="top" src="celeste.jpeg" />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and make up the bulk of
+                      the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+
+                <Card style={{ width: '18rem' }}>
+                  <Card.Img variant="top" src="celeste.jpeg" />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and make up the bulk of
+                      the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+
+              </Card.Body>
+              <Card.Footer className="text-muted">2 days ago</Card.Footer>
+            </Card>
+          </Col>
+
+          <Col>
+            <Card className="text-center">
+              <Card.Header>Featured</Card.Header>
+              <Card.Body>
+
+                <Card style={{ width: '18rem' }}>
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                    <Card.Text>
+                      Some quick example text to build on the card title and make up the bulk of
+                      the card's content.
+                    </Card.Text>
+                    <Card.Link href="#">Card Link</Card.Link>
+                    <Card.Link href="#">Another Link</Card.Link>
+                  </Card.Body>
+                </Card>
+
+                <Card style={{ width: '18rem' }}>
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                    <Card.Text>
+                      Some quick example text to build on the card title and make up the bulk of
+                      the card's content.
+                    </Card.Text>
+                    <Card.Link href="#">Card Link</Card.Link>
+                    <Card.Link href="#">Another Link</Card.Link>
+                  </Card.Body>
+                </Card>
+
+                <Card style={{ width: '18rem' }}>
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                    <Card.Text>
+                      Some quick example text to build on the card title and make up the bulk of
+                      the card's content.
+                    </Card.Text>
+                    <Card.Link href="#">Card Link</Card.Link>
+                    <Card.Link href="#">Another Link</Card.Link>
+                  </Card.Body>
+                </Card>
+
+              </Card.Body>
+              <Card.Footer className="text-muted">2 days ago</Card.Footer>
+            </Card>
+          </Col>
+
+          <Col>
+            <Card className="text-center">
+              <Card.Header>Featured</Card.Header>
+              <Card.Body>
+
+                <Card style={{ width: '18rem' }}>
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                    <Card.Text>
+                      Some quick example text to build on the card title and make up the bulk of
+                      the card's content.
+                    </Card.Text>
+                    <Card.Link href="#">Card Link</Card.Link>
+                    <Card.Link href="#">Another Link</Card.Link>
+                  </Card.Body>
+                </Card>
+
+                <Card style={{ width: '18rem' }}>
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                    <Card.Text>
+                      Some quick example text to build on the card title and make up the bulk of
+                      the card's content.
+                    </Card.Text>
+                    <Card.Link href="#">Card Link</Card.Link>
+                    <Card.Link href="#">Another Link</Card.Link>
+                  </Card.Body>
+                </Card>
+
+                <Card style={{ width: '18rem' }}>
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                    <Card.Text>
+                      Some quick example text to build on the card title and make up the bulk of
+                      the card's content.
+                    </Card.Text>
+                    <Card.Link href="#">Card Link</Card.Link>
+                    <Card.Link href="#">Another Link</Card.Link>
+                  </Card.Body>
+                </Card>
+
+              </Card.Body>
+              <Card.Footer className="text-muted">2 days ago</Card.Footer>
+            </Card>
+          </Col>
+
+
+        </Row>
+      </Container>
     </div>
   )
 }
